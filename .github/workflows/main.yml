@@ -15,13 +15,8 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '21'
 
-      - name: Start selenoid server
-        uses: Xotabu4/selenoid-github-action@v2
-        with:
-          browsers: chrome
-          last-versions: 1
-
-      - name: run the web test
+     
+      - name: run the  test
         run:
-          mvn clean test -Pweb
+          mvn clean test
       
