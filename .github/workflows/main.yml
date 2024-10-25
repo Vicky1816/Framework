@@ -16,7 +16,7 @@ jobs:
           java-version: '21'
 
      
-      - name: run the  test
+      - name: run the web test
         run:
           mvn clean test
       
